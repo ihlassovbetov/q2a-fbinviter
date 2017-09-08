@@ -54,7 +54,7 @@ class qa_fbinvite_widget {
 				<img src="'.qa_path_to_root().'/qa-plugin/q2a-fbinvite-gyzgyn/fb.png" alt="Facebook" title="Facebook width="50" height="50"/>			  
 				<span>'.$widget_content.'</span>
               </div>
-				<script defer src="https://connect.facebook.net/en_US/all.js"></script>   
+				<script src="https://connect.facebook.net/en_US/all.js"></script>   
 					<input id="qa_fb_invite" type="button" onclick="sendRequestViaMultiFriendSelector(); return false;" value="'.$widget_button.'"/>
 				<script>
 					FB.init({

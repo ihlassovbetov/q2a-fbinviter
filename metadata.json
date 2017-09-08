@@ -1,0 +1,9 @@
+{
+	"name": "FB Invite",
+	"description": "This plugin allows you to invite friends tp Q2A from faceboook",
+	"version": "1.0",
+	"date": "2017-09-05",
+	"author": "Yhlas Sovbetov",
+	"license": "GPLv2",
+	"min_q2a": "1.5"
+}

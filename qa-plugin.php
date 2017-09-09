@@ -1,7 +1,7 @@
 <?php
 
 /*
-	Plugin Name: FBinvite
+	Plugin Name: FBinviter
 	Plugin Description: Invite your facebook friends to q2a.
 	Plugin URI: https://github.com/ihlassovbetov/q2a-fbinviter
 	Plugin Version: 1.0

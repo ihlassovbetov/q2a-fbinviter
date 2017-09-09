@@ -28,11 +28,11 @@
 			header('Location: ../../');
 			exit;
 	}
-	qa_register_plugin_layer('qa-fbinvite-layer.php', 'FBinviter Layer');	
+	qa_register_plugin_layer('qa-fbinvite-layer.php', 'FBinvite Layer');	
 		
-	qa_register_plugin_module('module', 'qa-fbinvite-admin.php', 'qa_fbinvite_admin', 'FBinviter Admin');
+	qa_register_plugin_module('module', 'qa-fbinvite-admin.php', 'qa_fbinvite_admin', 'FBinvite Admin');
 
-	qa_register_plugin_module('widget', 'qa-fbinvite-widget.php', 'qa_fbinvite_widget', 'FBinviter Widget');
+	qa_register_plugin_module('widget', 'qa-fbinvite-widget.php', 'qa_fbinvite_widget', 'FBinvite Widget');
 
 /*
 	Omit PHP closing tag to help avoid accidental output

@@ -53,7 +53,7 @@ class qa_fbinvite_widget {
 		echo '<div class="fb-invite-widget-content">
 				<img src="'.qa_path_to_root().'/qa-plugin/q2a-fbinvite-gyzgyn/fb.png" alt="Facebook" title="Facebook width="50" height="50"/>			  
 				<span>'.$widget_content.'</span>
-              </div>
+              	      </div>
 				<script src="https://connect.facebook.net/en_US/all.js"></script>   
 					<input id="qa_fb_invite" type="button" onclick="sendRequestViaMultiFriendSelector(); return false;" value="'.$widget_button.'"/>
 				<script>
@@ -80,6 +80,7 @@ class qa_fbinvite_widget {
 						// Handle callback here
 					}
 				</script>';
+		echo '</div>';
 	} 
 };
 

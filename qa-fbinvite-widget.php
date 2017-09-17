@@ -45,15 +45,16 @@ class qa_fbinvite_widget {
 		$widget_title =	qa_opt('fbinvite_plugin_widget_title');
 		$widget_content =	qa_opt('fbinvite_plugin_widget_content');
 		$widget_button =	qa_opt('fbinvite_plugin_widget_button');
-		$widget_fbid =	qa_opt('fbinvite_app_id');
+		$widget_fbid = qa_opt('fbinvite_app_id');
 		$popup_title = qa_opt('fbinvite_plugin_popup_title');
-				
+		$site_url = qa_opt('site_url');
+						
 		echo '<div class="fbinvite-widget-gyzgyn">';
 		echo '<h2 class="fbinvite-widget-title">'.$widget_title.'</h2>';
-		echo '<div class="fb-invite-widget-content">
-				<img src="'.qa_path_to_root().'/qa-plugin/q2a-fbinvite-gyzgyn/fb.png" alt="Facebook" title="Facebook width="50" height="50"/>			  
+		echo '<div class="fbinvite-widget-content">
+				<i class="icon-facebook-squared fbinvite"></i>		  
 				<span>'.$widget_content.'</span>
-              	      </div>
+              </div>
 				<script src="https://connect.facebook.net/en_US/all.js"></script>   
 					<input id="qa_fb_invite" type="button" onclick="sendRequestViaMultiFriendSelector(); return false;" value="'.$widget_button.'"/>
 				<script>
@@ -64,15 +65,15 @@ class qa_fbinvite_widget {
 
 					function sendRequestToRecipients() {
 						var user_ids = document.getElementsByName("user_ids")[0].value;
-						FB.ui({method: "apprequests",
-							message: "'.$popup_title.'",
+						FB.ui({method: "send",
+							link: "'.$site_url.'",
 							to: user_ids, 
 						}, requestCallback);
 					}
 
 					function sendRequestViaMultiFriendSelector() {
-						FB.ui({method: "apprequests",
-							message: "'.$popup_title.'"
+						FB.ui({method: "send",
+							link: "'.$site_url.'"
 						}, requestCallback);
 					}
       
@@ -83,7 +84,3 @@ class qa_fbinvite_widget {
 		echo '</div>';
 	} 
 };
-
-/*
-	Omit PHP closing tag to help avoid accidental output
-*/

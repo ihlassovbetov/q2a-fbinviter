@@ -42,8 +42,6 @@
 					return 'Invite';
 				case 'fbinvite_app_id':
 					return '322987107777035';
-				case 'fbinvite_plugin_popup_title':
-					return 'Welcome to '.qa_opt('site_title');
 				default:
 					return null;
 			}
@@ -62,7 +60,6 @@
 				qa_opt('fbinvite_plugin_widget_content',qa_post_text('fbinvite_plugin_widget_content'));
 				qa_opt('fbinvite_plugin_widget_button',qa_post_text('fbinvite_plugin_widget_button'));
 				qa_opt('fbinvite_app_id',qa_post_text('fbinvite_app_id'));
-				qa_opt('fbinvite_plugin_popup_title',qa_post_text('fbinvite_plugin_popup_title'));
 				
 				$ok = qa_lang('admin/options_saved');
 			}
@@ -111,14 +108,7 @@
 				'type' => 'text',
 				'tags' => 'NAME="fbinvite_plugin_widget_button"',
 				'value' => qa_opt('fbinvite_plugin_widget_button'),
-			);
-			
-			$fields[] = array(
-				'label' => 'Widget Popup Title',
-				'type' => 'text',
-				'tags' => 'NAME="fbinvite_plugin_popup_title"',
-				'value' => 'Welcome to '.qa_opt('site_title'),
-			);				
+			);					
 
 			$fields[] = array(
 				'type' => 'blank',

@@ -4,6 +4,10 @@
 	"version": "1.0",
 	"date": "2017-09-05",
 	"author": "Yhlas Sovbetov",
+	"author_uri": "https://twitter.com/ihlassovbetov",
+	"uri": "https://github.com/ihlassovbetov/q2a-fbinviter",
+	"update_uri": "https://raw.githubusercontent.com/ihlassovbetov/q2a-fbinviter/master/qa-plugin.php",
 	"license": "GPLv2",
-	"min_q2a": "1.5"
+	"min_q2a": "1.5",
+	"load_order": "after_db_init"
 }
